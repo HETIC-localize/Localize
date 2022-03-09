@@ -1,4 +1,4 @@
-import TraductionDataFormat from "../components/type";
+import { TraductionDataFormat } from "../components/type";
 let message: string
 
 const useFormatMessage = (userCode: string, data: Array<TraductionDataFormat>): string  => {

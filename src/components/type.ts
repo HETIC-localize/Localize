@@ -1,4 +1,4 @@
-type TraductionDataFormat = {
+export type TraductionDataFormat = {
   id: string
   code: string
   value: string
@@ -6,4 +6,9 @@ type TraductionDataFormat = {
   createdAt: string
 }
 
-export default TraductionDataFormat;
+export type Message = {
+  formattedMessage: string;
+  data: Array<TraductionDataFormat>
+}
+
+
