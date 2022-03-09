@@ -1,13 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
-import Message from './components/Message'
+import Message from "./components/Message";
 
 function App() {
-  return (
-    <Message />
-  );
+  return <Message />;
 }
 
 export default App;

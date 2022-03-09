@@ -1,6 +1,9 @@
-type MessageProps = {
-    key: 'string'
-    code: 'string'
+type TraductionDataFormat = {
+  id: string
+  code: string
+  value: string
+  country: string 
+  createdAt: string
 }
 
-export default MessageProps
+export default TraductionDataFormat;

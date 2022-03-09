@@ -1,3 +1,3 @@
-const LOREMIPSUM:string = "Lorem ipsum dolor sit amet"
+const LOREMIPSUM: string = "Lorem ipsum dolor sit amet";
 
-export default LOREMIPSUM
+export default LOREMIPSUM;
