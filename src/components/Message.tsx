@@ -1,30 +1,13 @@
 import React, { useState } from "react";
-import useUserLangage from "../hooks/useUserLangage";
-
 import languagedata from './languagedata.json'
-import TraductionDataFormat from './type'
+import useFormatMessage from "../hooks/useFormatMessage";
 
 const Message = () => {
-  const [data, setData] = useState(languagedata)
-  const test2 = useUserLangage();
-//   console.log(data)
-
-    let message: string
-
-  const useFormatMessage = (userCode: string): string | undefined => {
-    data.map(test => {
-          if(userCode === test.code){
-            message =  test.value;
-          }
-          return undefined
-      })
-      console.log(userCode)
-      return message
-  }
+  const [data] = useState(languagedata)
 
   return (
     <React.Fragment>
-      <p>{useFormatMessage("home.greetings")}</p>
+      <p>{useFormatMessage("home.statut", data)}</p>
     </React.Fragment>
   );
 };
