@@ -11,4 +11,13 @@ export type Message = {
   data: Array<TraductionDataFormat>
 }
 
+export type FormatMessageItem = {
+  transmittedCode: string
+}
+
+export type TranslationContent = {
+  translationData: Array<TraductionDataFormat>
+  setTranslationData:(c: Array<TraductionDataFormat>) => void
+}
+
 

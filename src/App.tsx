@@ -1,12 +1,20 @@
 import "./App.css";
 
-import Message from "./components/Message";
+import { useState } from "react";
+import { TranslationContext } from './context/TranslationContext'
+import Translate from "./components/Translate";
 import languageData from "./components/languagedata.json"
+import {TraductionDataFormat} from './components/type'
 
 const test = 'home.statut'
 
 function App() {
-  return <Message transmittedCode={test} transmittedData={languageData}/>;
+  const [translationData, setTranslationData] = useState<Array<TraductionDataFormat>>(languageData)
+  return (
+    <TranslationContext.Provider value= {{ translationData, setTranslationData}}>
+      <Translate transmittedCode={test} />
+    </TranslationContext.Provider>
+  );
 }
 
 export default App;
