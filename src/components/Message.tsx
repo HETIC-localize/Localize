@@ -1,13 +1,22 @@
 import React, { useState } from "react";
-import languagedata from './languagedata.json'
+import { TraductionDataFormat } from './type'
 import useFormatMessage from "../hooks/useFormatMessage";
 
-const Message = () => {
-  const [data] = useState(languagedata)
+type FormatMessageItem = {
+  transmittedCode: string
+  transmittedData: Array<TraductionDataFormat>
+}
+
+const Message = ({transmittedCode , transmittedData}: FormatMessageItem ) => {
+  const [code] = useState(transmittedCode)
+  const [data] = useState(transmittedData)
+
+  const test = useFormatMessage(code, data)
+
 
   return (
     <React.Fragment>
-      <p>{useFormatMessage("home.statut", data)}</p>
+      <p>{test}</p>
     </React.Fragment>
   );
 };
