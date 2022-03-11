@@ -7,9 +7,16 @@
     "createdAt": "2022-03-09T10:31:40+00:00"
   },
   {
+    "id": "b51dc814-e645-466d-bee6-20f1296ba637",
+    "code": "home.hello",
+    "value": "Bonjour",
+    "country": "fr",
+    "createdAt": "2022-03-09T10:31:40+00:00"
+  }, 
+  {
     "id": "b51dc814-e645-466d-bee6-20f1296ba636",
-    "code": "home.statut",
-    "value": "statut",
+    "code": "home.world",
+    "value": "monde",
     "country": "fr",
     "createdAt": "2022-03-09T10:31:40+00:00"
   }
